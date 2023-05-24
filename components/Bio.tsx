@@ -23,7 +23,7 @@ function Bio() {
             marginRight: '-50%',
             transform: 'translate(-50%, -50%)',
             backgroundColor: 'floralwhite',
-            width: '60%',
+            width: '80vw',
             height: '90%',
             maxHeight: '80%',
             overflowY: 'scroll',
