@@ -30,7 +30,17 @@ function Bio() {
         },
     };
 
-    const classes = [{ _name: "Human-Computer Interaction", url: "https://omscs.gatech.edu/cs-6750-human-computer-interaction"}, {_name: "Knowledge-Based Artificial Intelligence" , url: "https://omscs.gatech.edu/cs-7637-knowledge-based-artificial-intelligence-cognitive-systems"}, {_name: "Machine Learning for Trading", url: "https://omscs.gatech.edu/cs-7646-machine-learning-trading"}, {_name: "Computer Networks", url: "https://omscs.gatech.edu/cs-6250-computer-networks"}, {_name: "Artificial Intelligence, Ethics and Society", url: "https://omscs.gatech.edu/cs-6603-ai-ethics-and-society"}]
+    const classes = [{ _name: "Human-Computer Interaction", url: "https://omscs.gatech.edu/cs-6750-human-computer-interaction"},
+        {_name: "Knowledge-Based Artificial Intelligence" , url: "https://omscs.gatech.edu/cs-7637-knowledge-based-artificial-intelligence-cognitive-systems"},
+        {_name: "Machine Learning for Trading", url: "https://omscs.gatech.edu/cs-7646-machine-learning-trading"},
+        {_name: "Software Development Process", url: "https://omscs.gatech.edu/cs-6300-software-development-process"},
+        {_name: "Computer Networks", url: "https://omscs.gatech.edu/cs-6250-computer-networks"},
+        {_name: "Artificial Intelligence, Ethics and Society", url: "https://omscs.gatech.edu/cs-6603-ai-ethics-and-society"},
+        {_name: "Video Game Design", url: ""},
+        {_name: "Introduction to Cognitive Science", url: ""},
+        {_name: "Game AI", url: ""},
+        {_name: "Artificial Intelligence", url: ""}
+    ]
     type _Class = { _name: string, url: string };
 
     const ModalContent = (<div>
@@ -40,7 +50,9 @@ function Bio() {
         <div className={styles.classInfo}>
             <ul className={styles.classList}>
                 {Object.values(classes).map((_class: _Class) => {
-                    return <li key={_class._name} className={styles.classListElement}><a target={"_blank"} href={_class.url}>{_class._name}</a></li>
+                    return _class.url !== "" ?
+                    <li key={_class._name} className={styles.classListElement}><a target={"_blank"} href={_class.url}>{_class._name}</a></li>
+                    : <li key={_class._name} className={styles.classListElementDisabled}><span>{_class._name}</span></li>
                 })}
             </ul>
         </div>

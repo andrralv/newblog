@@ -35,7 +35,7 @@
 
 .classInfo {
   text-align: center;
-  margin-top: 7%;
+  margin-top: 2%;
 }
 
 .classListElement {
@@ -56,5 +56,16 @@
     &:hover {
       --_p: 0%;
     }
+  }
+}
+
+.classListElementDisabled {
+  cursor: wait;
+  list-style-type: none;
+  line-height: 3.5;
+
+  span {
+    font-weight: 400;
+    color: grey;
   }
 }
