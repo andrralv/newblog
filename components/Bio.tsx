@@ -10,6 +10,7 @@ function Bio() {
 
     function modalHandler (event: React.UIEvent): any {
         event.preventDefault();
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
         setIsModalOpen(!isModalOpen)
     }
 

@@ -44,18 +44,6 @@
 
   a {
     font-weight: 400;
-    //background: rgb(255,0,0);
-    //background: linear-gradient(90deg, rgba(255,0,0,1) 2%, rgba(208,217,22,1) 61%, rgba(0,212,255,1) 100%);
-    background:
-            linear-gradient(90deg,rgba(255,0,0,1) 50%,#000 0)
-            var(--_p,80%)/200% no-repeat;
-    -webkit-background-clip: text;
-    background-clip: text;
-    transition: .4s;
-
-    &:hover {
-      --_p: 0%;
-    }
   }
 }
 
