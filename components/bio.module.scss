@@ -1,0 +1,60 @@
+.introDescription {
+  padding-top: 20px;
+  margin-bottom: 0px !important;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.line {display: block !important;}
+
+.times {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background: linear-gradient(to right, rgb(185, 68, 0) , rgb(231, 131, 0), green, rgb(0, 190, 190), rgb(0, 0, 216), violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.papyrus {font-family: "Papyrus", fantasy; font-weight: bold; color: rgb(4, 0, 255);}
+
+.modal {
+  margin: 0 auto;
+  width: 60%;
+  z-index: 100;
+}
+
+.closeModal {
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+}
+
+.classList {
+  padding: 0;
+  height: 100%;
+}
+
+.classInfo {
+  text-align: center;
+  margin-top: 7%;
+}
+
+.classListElement {
+  list-style-type: none;
+  line-height: 3.5;
+
+  a {
+    font-weight: 400;
+    //background: rgb(255,0,0);
+    //background: linear-gradient(90deg, rgba(255,0,0,1) 2%, rgba(208,217,22,1) 61%, rgba(0,212,255,1) 100%);
+    background:
+            linear-gradient(90deg,rgba(255,0,0,1) 50%,#000 0)
+            var(--_p,80%)/200% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: .4s;
+
+    &:hover {
+      --_p: 0%;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+@mixin imgcenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-top: -20%;
+}
+
+.header {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  cursor: url('/content/computer.png'), pointer;
+  img {
+    margin: 0 auto;
+  }
+}
+
+.dynamicImg {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 150px;
+  cursor: url('/content/fork.png'), pointer;
+  &:active {
+    cursor: url('/content/fork-twisted.png'), pointer;
+  }
+}
+
+.circle {
+  margin-left: 30px;
+  margin-right: 30px;
+  position: absolute;
+  z-index: 3;
+  top: 4%;
+
+  img {
+    position: relative;
+  }
+}
+
+.image {
+  @include imgcenter;
+  z-index: 1;
+  width: 80%;
+}
+
+.line {
+  text-align: center;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .dynamic-img .circle {
+    width: 55%;
+  }
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  @media only screen and (max-width: 600px) {
+    max-width: 80%;
+  }
+}

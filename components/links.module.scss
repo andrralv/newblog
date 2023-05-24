@@ -1,0 +1,19 @@
+@mixin link {list-style-type: none; font-family: 'Courier New', Courier, monospace;}
+.linksLeft {
+  @include link;
+  text-align: right;
+  margin: 10px;
+  padding: 0;
+}
+.linksRight {
+  @include link;
+  margin: 10px;
+  padding: 0;
+}
+.linksTableLeft {border-right: solid 1px rgb(180, 180, 180); border-bottom: none; }
+.linksTableRight {border-bottom: none;}
+
+.linksLeft a {color: blue}
+.linksRight a {color: red}
+.table {margin: 0 auto;}
+.emoji {padding: 0 5px;}
