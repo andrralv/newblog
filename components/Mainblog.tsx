@@ -17,7 +17,7 @@ function Mainblog(props: MainBlogProps) {
             style={{
                 marginLeft: `auto`,
                 marginRight: `auto`,
-                paddingTop: `0px !important`,
+                paddingTop: `0px`,
                 marginBottom: '40px'
             }}
         >

@@ -37,7 +37,7 @@ function Bio() {
         {_name: "Software Development Process", url: "https://omscs.gatech.edu/cs-6300-software-development-process"},
         {_name: "Computer Networks", url: "https://omscs.gatech.edu/cs-6250-computer-networks"},
         {_name: "Artificial Intelligence, Ethics and Society", url: "https://omscs.gatech.edu/cs-6603-ai-ethics-and-society"},
-        {_name: "Video Game Design", url: ""},
+        {_name: "Video Game Design", url: "https://omscs.gatech.edu/cs-6457-video-game-design"},
         {_name: "Introduction to Cognitive Science", url: ""},
         {_name: "Game AI", url: ""},
         {_name: "Artificial Intelligence", url: ""}

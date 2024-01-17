@@ -1,11 +1,11 @@
 .introDescription {
   padding-top: 20px;
-  margin-bottom: 0px !important;
+  margin-bottom: 0px;
   max-width: 60%;
   margin: 0 auto;
 }
 
-.line {display: block !important;}
+.line {display: block}
 
 .times {
   font-family: "Comic Sans MS", cursive, sans-serif;
@@ -23,7 +23,7 @@
 
 .closeModal {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   cursor: pointer;
 }
 
